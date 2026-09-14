@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h1>Welcome to the CSXL</h1>
+  <div class="container">
+    <div class="button-container" *ngFor="let story of stories">
+      <button class="button-56" role="button" [title]="story.name" [routerLink]="[story.route]">{{ story.name }}</button>
+    </div>
+  </div>
+</body>
+</html>
